@@ -1,0 +1,72 @@
+<form  [formGroup]="data" (ngSubmit)="Onsubmitdata()">
+    <div class="form-row">
+        <div class="col">
+          <input formControlName="nomAgence"  type="text" class="form-control"  placeholder="nomagence">
+        </div>
+        <div class="col">
+          <input formControlName="lieu"   type="text" class="form-control" placeholder="lieu">
+        </div>
+      </div> <br>
+    <div class="form-row">
+        <div class="col">
+          <input formControlName="phone"    type="telephone" class="form-control" placeholder="phone">
+        </div>
+        <div class="col">
+          <input formControlName="isactive"  type="number" class="form-control" placeholder="isActive">
+        </div> 
+      </div><br>
+    <div class="form-row">
+        <div class="col">
+          <input formControlName="username"    type="text" class="form-control" placeholder="Username">
+        </div>
+       
+      
+
+    
+        <div class="col">
+          <input formControlName="password"    type="password" class="form-control" placeholder="Password">
+        </div></div><br>
+        <div class="form-row">
+        <div class="col">
+          <input formControlName="nom"   type="text" class="form-control" placeholder="Nom">
+        </div>
+     
+        <div class="col">
+          <input formControlName="prenom"   type="text" class="form-control" placeholder="Prenom">
+        </div> </div> <br>
+        <div class="form-row">
+        <div class="col">
+          <input formControlName="adresse"    type="text" class="form-control" placeholder="Adresse">
+        </div>
+     
+        <div class="col">
+          <input formControlName="telephone" type="telephone" class="form-control" placeholder="Telephone">
+      </div>
+    </div> <br>
+
+    <div class="form-row">
+   
+        <div class="col">
+          
+          <input formControlName="status"    type="text" class="form-control" placeholder="Status">
+        
+        
+      </div> 
+     
+          <div class="col">
+        <input  formControlName="profil" type="text" class="form-control" placeholder="profil">
+
+      </div> 
+      </div> <br>
+      <div class="form-row">  
+          <div class="col">    
+              <img [src]= imageUrl alt="imge" style="width:250px;height:200px">
+    <label  for="exampleFormControlFile1">ImageName</label>
+    <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)"  class="form-control-file" id="exampleFormControlFile1">
+  </div> </div> <br> 
+  
+       
+        <button type="submit" (click)="OnSubmit()" class="btn-large btn-submit" [disabled]="!data.valid" >Submit</button>
+     
+ 
+</form>

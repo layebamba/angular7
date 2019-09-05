@@ -1,0 +1,37 @@
+<form [formGroup]="ataya" (ngSubmit)="Onsubmitataya()">
+  <div class="form-row">
+    <div class="col">
+      <input formControlName="nomexp" type="text" class="form-control" placeholder="nomexp">
+    </div>
+    <div class="col">
+      <input formControlName="prenomexp" type="text" class="form-control" placeholder="prenom">
+    </div>
+  </div> <br>
+
+  <div class="form-row">
+    <div class="col">
+      <input formControlName="telexp" type="number" class="form-control" placeholder="telexp">
+    </div>
+    
+    <div class="col">
+      <input formControlName="nomrecep" type="text" class="form-control" placeholder="nomrecep">
+    </div>
+  </div> <br>
+  <div class="form-row">
+    <div class="col">
+      <input formControlName="prenomrecep" type="text" class="form-control" placeholder="prenomrecep">
+    </div>
+    <div class="col">
+      <input formControlName="telrecep"type="number" class="form-control" placeholder="telrecep">
+    </div>
+  </div> <br>
+  <div class="form-row">
+    
+    
+    <div class="col">
+      <input formControlName="mtntenvoi" type="number" class="form-control" placeholder="mtntenvoi">
+    </div> </div> <br>
+  
+      <button type="button" (click)="Ok()" class="btn btn-info" [disabled]="!ataya.valid" >Envoyer</button>
+  
+</form>

@@ -1,0 +1,23 @@
+<form #depotForm="ngForm">
+    <div class="row">
+        <div class="col">
+            <input [(ngModel)]=" depotUserData.montants" type="number"  name="montants" class="form-control" placeholder=montants>
+          </div>
+      <div class="col">
+        <input [(ngModel)]=" depotUserData.numerocompte" type="number" name="numerocompte" class="form-control" placeholder="Numerocompte">
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col">
+          <input [(ngModel)]=" depotUserData.compte" type="number"  name="compte" class="form-control" placeholder="Compte">
+        </div>
+      <div class="col">
+        <input [(ngModel)]=" depotUserData.user" type="number"  name="user" class="form-control" placeholder=User>
+      </div>
+    </div> <br>
+    <div>
+       <button (click)="Onsubmit()" type="button" class="btn btn-primary float-right">Deposer</button>
+
+
+      </div>
+  </form>

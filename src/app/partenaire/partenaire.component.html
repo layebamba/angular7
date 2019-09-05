@@ -1,0 +1,29 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      
+      <th scope="col">Nomagence</th>
+      <th scope="col">Ninea</th>
+      <th scope="col">registre</th>
+      <th scope="col">lieu</th>
+      <th scope="col">Phone</th>
+      <th scope="col">IsActive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let partenaire of partenaire">
+      
+      
+      <td>{{partenaire.nomAgence}}</td>
+      <td>{{partenaire.ninea}}</td>
+      <td>{{partenaire.registre}}</td>
+      <td>{{partenaire.lieu}}</td>
+      <td>{{partenaire.phone}}</td>
+   
+      <td>{{partenaire.isActive}}</td>
+   
+    </tr>
+  </tbody>
+</table>
+
+
